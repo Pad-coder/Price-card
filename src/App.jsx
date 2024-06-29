@@ -7,6 +7,7 @@ function App() {
   let data=[{
     plan:"Free",
     price:"$0",
+    free: true,
     service_data:[
       {
       status:true,
@@ -53,6 +54,7 @@ function App() {
   {
     plan:"Plus",
     price:"$9",
+    free: false,
     service_data:[
       {
       status:true,
@@ -99,6 +101,7 @@ function App() {
   {
     plan:"Pro",
     price:"$49",
+    free: false,
     service_data:[
       {
       status:true,
@@ -145,6 +148,7 @@ function App() {
   {
     plan:"Premium",
     price:"$89",
+    free: false,
     service_data:[
       {
       status:true,
@@ -218,7 +222,7 @@ function App() {
                     })
                   }
                   <div className="d-grid">
-                    <a href="#" className="btn btn-primary text-uppercase">Buy Plan</a>
+                    <a href="#" className="btn btn-primary text-uppercase">{e.free ? "Try for free" : "Buy Now"}</a>
                   </div>
                 </div>
               </div>
